@@ -1072,6 +1072,7 @@ YY_RULE_SETUP
                     const char *error;
                     FILE *fp = scanctx_push_include(yyextra,
                                                     (void *)YY_CURRENT_BUFFER,
+                                                    scanctx_getpath(yyextra),
                                                     &error);
                     if(fp)
                     {
